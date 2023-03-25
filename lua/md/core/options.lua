@@ -1,3 +1,11 @@
+--
+-- ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
+-- ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
+-- ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
+-- ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
+-- ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
+-- ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
+--
 local opt = vim.opt -- для краткости
 
 --line numbers
@@ -17,13 +25,13 @@ opt.wrap = false
 opt.ignorecase = true
 opt.smartcase = true
 
--- строка курсора
-opt.cursorline = true
-
--- apperanse
+-- ui
+opt.laststatus = 2 -- only the last window will always have a status line
+opt.cursorline = true -- подсветка строки курсора
 opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
+opt.colorcolumn = "80"
 
 -- настройка backspace
 opt.backspace = "indent,eol,start"
